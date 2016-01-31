@@ -6,11 +6,26 @@
     <meta name="description" content=" FILL ME IN ">
     <meta name="author" content=" FILL ME IN ">
     <title>Cameron Pittman: Portfolio</title>
-
-
 </head>
 <body>
-
+<script>
+    function loadcssfile(filename,media) {
+        var fileref = document.createElement("link");
+        fileref.setAttribute("rel", "stylesheet");
+        fileref.setAttribute("type", "text/css");
+        fileref.setAttribute("href", filename);
+        fileref.setAttribute("media", media);
+        document.getElementsByTagName("head")[0].appendChild(fileref)
+    }
+    function loadfontfile(filename){
+        var fileref = document.createElement("link");
+        fileref.setAttribute("href", filename);
+        document.getElementsByTagName("head")[0].appendChild(fileref)
+    }
+    loadcssfile("css/style.css","all");
+    loadcssfile("css/print.css","print");
+    loadfontfile("http://fonts.googleapis.com/css?family=Open+Sans:400,700");
+</script>
 <header>
     <a href="/"><img src="img/profilepic.jpg"></a>
 
@@ -74,24 +89,6 @@
 <footer>
     <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
 </footer>
-<script>
-    function loadcssfile(filename,media) {
-        var fileref = document.createElement("link");
-        fileref.setAttribute("rel", "stylesheet");
-        fileref.setAttribute("type", "text/css");
-        fileref.setAttribute("href", filename);
-        fileref.setAttribute("media", media);
-        document.getElementsByTagName("head")[0].appendChild(fileref)
-    }
-    function loadfontfile(filename){
-        var fileref = document.createElement("link");
-        fileref.setAttribute("href", filename);
-        document.getElementsByTagName("head")[0].appendChild(fileref)
-    }
-    loadcssfile("css/style.css","all");
-    loadcssfile("css/print.css","print");
-    //loadfontfile("http://fonts.googleapis.com/css?family=Open+Sans:400,700");
-</script>
 <script>
     (function (w, g) {
         w['GoogleAnalyticsObject'] = g;
