@@ -7,46 +7,35 @@
     <meta name="author" content=" FILL ME IN ">
     <title>Cameron Pittman: Portfolio</title>
     <style>
-        @import "css/one.css";
+        html {
+            font-size: 100%;
+            overflow-y: scroll;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: none
+        }
+
+        body {
+            margin: 0;
+            font-size: 14px;
+            line-height: 1.61;
+            font-weight: 400
+        }
+
+        body, button, input, select, textarea {
+            font-family: 'Open Sans', sans-serif;
+            color: #333
+        }
+        @media only screen and (max-width: 480px) {
+            body {
+                font-size: 12px
+            }
+        }
     </style>
 </head>
 <body>
 <style>
-    a {
-        color: #12C
-    }
-
-    header, footer, .container {
-        max-width: 45em;
-        margin: 0 auto
-    }
-
-    header {
-        padding: 0 .5em;
-        color: #C90B0B
-    }
-
-    header img {
-        border-radius: 40px;
-        float: left
-    }
-
-    @media only screen and (max-width: 480px) {
-        header p {
-            padding-left: 4.5em
-        }
-    }
-
-    header p {
-        font-size: 1.5em;
-        font-weight: 700;
-        padding-left: 4em
-    }
-
-    header p span {
-        font-size: .8em;
-        font-weight: 400
-    }
+    @import "css/one.css";
 </style>
 <header>
     <a href="/"><img src="img/profilepic.jpg"></a>
