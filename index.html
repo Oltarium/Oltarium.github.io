@@ -6,9 +6,7 @@
     <meta name="description" content=" FILL ME IN ">
     <meta name="author" content=" FILL ME IN ">
     <title>Cameron Pittman: Portfolio</title>
-    <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
- <!--   <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="preload">
-    <link href="css/print.css" rel="stylesheet" media="print">-->
+
 
 </head>
 <body>
@@ -84,7 +82,14 @@
         fileref.setAttribute("href", filename);
         document.getElementsByTagName("head")[0].appendChild(fileref)
     }
+    function loadfontfile(filename){
+        var fileref = document.createElement("link");
+        fileref.setAttribute("href", filename);
+        document.getElementsByTagName("head")[0].appendChild(fileref)
+    }
     loadcssfile("css/style.css");
+    loadcssfile("css/print.css");
+    loadfontfile("http://fonts.googleapis.com/css?family=Open+Sans:400,700");
 </script>
 <script>
     (function (w, g) {
